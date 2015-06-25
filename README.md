@@ -1,2 +1,2 @@
-# IGSC2015
-Paper for the 6th International Green and Sustainable Computing Conference (IGSC 2015)
+# GSICT2015
+Paper for the IEEE International Workshop on Green Standardizations for ICT and Relevant Technologies (GSICT 2015)
