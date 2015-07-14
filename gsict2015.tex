@@ -419,11 +419,10 @@ and Server energy values. Device energy is found as described above,
 while the remaining elements are calculated based upon the data
 throughput (D) and a number of constants (all energy values are in
 Joules, and the energy-data constants are given in J/MB):
-
 \begin{align*}
 E_{LAN} &= E_{standby} + k_{energy}-data_{LAN} * D)\\
 E_{WAN} &= k_{energy}-data_{WAN} * D\\
-E_{server} &= k_{energy}-data_{server} * D\\
+E_{server} &= k_{energy}-data_{server} * D
 \end{align*}
 
 \subsection{Carbon Calculation}
@@ -432,14 +431,12 @@ Carbon produced is calculated as a function of energy consumed in each
 section, geographical location and time. The latter two data sets are
 discussed later in this document, and take the form of look- up
 tables. The carbon produced is calculated as below:
-
 \begin{align*}
 C_{device} &= k_{C\_time\_location} * E_{device}\\
 C_{LAN} &= k_{C\_time\_location} * E_{LAN}\\
 C_{WAN} &= k_{C\_time\_location} * E_{WAN}\\
-C_{server} &= k_{C\_time\_location} * E_{server}\\
+C_{server} &= k_{C\_time\_location} * E_{server}
 \end{align*}
-
 CO$_2$ produced is measured in g, and time-location constants are
 given in g/J, translated from the g/kWh that is input.
 
@@ -594,11 +591,10 @@ A use case has four principle characteristics:
 The aforementioned power factors affect the given power use of each
 device component, on average, in a given use state. These are
 calculated thus:
-
 \begin{align*}
 CPU &= CPU idle power * CPU power factor\\
 Display &= Display average * Display power factor\\
-Other &= CPU idle power * Other power factor\\
+Other &= CPU idle power * Other power factor
 \end{align*}
 
 CPU power use and CPU utilisation does not follow a linear
