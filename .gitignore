@@ -7,6 +7,9 @@
 *.out
 *.toc
 
+## The pdf
+gsict2015.pdf
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
