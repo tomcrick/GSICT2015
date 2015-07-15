@@ -15,7 +15,11 @@
 
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Whole-life Environmental Impacts of ICT Use\thanks{This work has been sponsored in part by Arup Group Ltd. and the Industrial Doctorate Centre in Systems at the University of Bristol. We also thank O. Spragg and S. Johnson for their contribution to earlier stages of this work.}}
+\title{Whole-life Environmental Impacts of ICT Use\thanks{This work
+    has been sponsored in part by Arup Group Ltd. and the Industrial
+    Doctorate Centre in Systems at the University of Bristol. We also
+    thank O. Spragg and S. Johnson for their contribution to earlier
+    stages of this work.}}
 
 
 % author names and affiliations
@@ -123,8 +127,7 @@ For all the benefits of ICT, it is also possible to identify negative,
 unintended consequences -- political, social, economic and
 environmental -- both now and potentially in the future. We also have
 seen emerging UK imperatives around technology education and digital
-skills~\cite{brown-et-al-toce2014}, the focus on (and profiling of)
-online behaviour~\cite{oatley+crick:2014} alongside the global
+skills~\cite{brown-et-al-toce2014}, contextualised by the the global
 priorities around cyber security~\cite{carr+crick-csss2015}, as well
 as the explosion in technologies surrounding the development of smart
 cities~\cite{cosgrave-et-al:2014} and future transport
@@ -224,9 +227,12 @@ they make up the UK market will be discussed a later section.
 
 \subsubsection{Environment Impact}
 
-We consider environmental impact exclusively as greenhouse gas (GHG) emissions using the CO$_2$e metric~\cite{bsi2050:2011,ieaco2em:2014}. This encompasses global warming potential of CO$_2$ as well as the relative global warming
+We consider environmental impact exclusively as greenhouse gas (GHG)
+emissions using the CO$_2$e
+metric~\cite{bsi2050:2011,ieaco2em:2014}. This encompasses global
+warming potential of CO$_2$ as well as the relative global warming
 severity of other greenhouse gases, relative to the severity of
-CO$_2$. 
+CO$_2$.
 
 % As discussed, other elements of environmental impact will be
 % presented and discussed in our conclusions and recommendations.
@@ -385,31 +391,23 @@ for each user.
 
 \subsection{User-Centric Input}
 
-To accurately capture user behaviour, it is necessary to capture it
-from primary data at the source. While this is time-consuming, it is
-beneficial to design a tool that is capable of direct user input. This is not
-only for future development of the LCA, but also to influence the
-design process to carefully consider the real life nuances of user
-behaviour.
-
-This tool works on the concept of prototypical days. These are defined
-as days that usually have very similar patterns. For example, all days
-where the user is at work and in the office on a typical work
+To accurately capture user behaviour, it is necessary to obtain it
+from primary data at the source. While this is time-consuming, we have
+created a tool to collect user data from 200 individuals in an online
+survey. This tool works on the concept of prototypical days. These are
+defined as days that usually have very similar patterns. For example,
+all days where the user is at work and in the office on a typical work
 schedule. We expect that 90\% of a user's days can be categorised with
 2-4 prototypical days, and that the rest can be acceptably amalgamated
 into the rest. The tool permits the user to enter what each of their
 devices is doing, to a half hour resolution over the 24 hour duration
 of a prototypical day. This includes inputting when the device is on
-but not actually in use.  The option to select a different country
-demonstrates the significance of geographical variability.
-
-\subsection{Upscaled Use}
-
-Finally, the individual is asked how many of each prototypical day
-makes up a year, with the request that all sum to 365 days. The values
-given for each device for each prototypical day can then be multiplied
-by the number of such prototypical days in a year, and then summed, to
-evaluate the individuals' overall impact in a year.
+but not actually in use. Finally, the individual is asked how many of
+each prototypical day makes up a year, with the request that all sum
+to 365 days. The values given for each device for each prototypical
+day can then be multiplied by the number of such prototypical days in
+a year, and then summed, to evaluate the individuals' overall impact
+in a year.
 
 \subsection{Energy Calculation}
 
@@ -512,10 +510,10 @@ are: Desktop: 127.275 kgCO$_2$e; Laptop: 85.456 kgCO$_2$e; Tablet:
 \subsection{User Input Strategy}
 
 The purpose of this section is to determine the average user of ICT
-devices; using primary market research we have produced a high-level
-market segmentation of all ICT users. For each segment we have defined
-key behavioural points and the device types owned by each; the
-resulting market segmentation can be seen in
+devices; using our primary market research we have produced a
+high-level market segmentation of all ICT users. For each segment we
+have defined key behavioural points and the device types owned by
+each; the resulting market segmentation can be seen in
 Figure~\ref{fig:itusersuk}, with our estimations of the relative
 proportions of each segment can be seen in
 Figure~\ref{fig:marketshare}.  Using primary market research into user
@@ -523,16 +521,16 @@ behaviour, we decided upon the types of days of use; typically
 `average weekend' and `average weekday' for most users. For each day a
 timetable of use, to a resolution of 0.5 hour slots, was specified.
 
-\begin{figure*}
+\begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{images/ukitusers_ownership_signif.png}
+\includegraphics[width=\columnwidth]{images/ukitusers_ownership_signif.png}
 \caption{ICT Users in UK, device ownership and significance to this analysis}
 \label{fig:itusersuk} 
-\end{figure*}
+\end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\columnwidth]{images/ukitusers_marketshare.png}
+\includegraphics[width=0.8\columnwidth]{images/ukitusers_marketshare.png}
 \caption{Assumed market share of ICT user types in UK}
 \label{fig:marketshare} 
 \end{figure}
@@ -569,7 +567,8 @@ a device into four categories:
 \begin{compactitem}
 \item CPU: Including all integral elements.
 \item Display: Inclusive of the power used by the display only.
-\item Network Components: Any power-consuming component that is used to transfer data in or out of the device.
+\item Network Components: Any power-consuming component that is used
+  to transfer data in or out of the device.
 \item Other: Inclusive of all power-consuming components
   of the device not covered in the previous categories as well as
   peripherals. Includes RAM, hard drive, motherboard, graphics
@@ -580,9 +579,9 @@ a device into four categories:
 A use case has four principle characteristics:
 
 \begin{compactitem}
-\item CPU Power Factor: the variation of the CPU’s power in a given use case.
-\item Display Power Factor: the variation of the Display’s power in a given use case.
-\item Other Power Factor: the variation of others in a given use case.
+\item CPU Power Factor: the variation of the CPU’s power in a given use case;
+\item Display Power Factor: the variation of the display's power in a given use case;
+\item Other Power Factor: the variation of others in a given use case;
 \item Data Flow: the magnitude of data (summation of in and out) flow during a use case.
 \end{compactitem}
 
@@ -631,7 +630,7 @@ device, the CPU rests at its idle power.
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.9\columnwidth]{images/cpuintensity_usecase.png}
+\includegraphics[width=0.8\columnwidth]{images/cpuintensity_usecase.png}
 \caption{CPU intensity by use case}
 \label{fig:cpuintensity} 
 \end{figure}
@@ -658,21 +657,15 @@ estimate without considering the power uses of individual devices. As
 such, these can be inferred from the remaining observed power use of a
 given device when network and CPU powers have been taken out, as
 determined in later sections. With regards to power factors, there are
-two elements that exist:
-
-\begin{compactitem}
-\item The use of peripherals to service a task: the inclusion of extra
-devices to facilitate an end, such as printers, scanners and such. The
-power impact of such devices is given by their independent power
-ratings.
-
-\item The power of internal components in relation to task intensity:
-  research suggests most other components scale very little with task
-intensity, and change their power more based on specific nuances - for
-example the HD with file sharing, the graphics card with media
-viewing. As such, this is considered to be a smaller influence than
-the peripherals
-\end{compactitem}
+two elements that exist: ({\emph{i}}) The use of peripherals to
+service a task: the inclusion of extra devices to facilitate an end,
+such as printers, scanners and such. The power impact of such devices
+is given by their independent power ratings; ({\emph{ii}}) The power
+of internal components in relation to task intensity: research
+suggests most other components scale very little with task intensity,
+and change their power more based on specific nuances, for example the
+HD with file sharing, the graphics card with media viewing. As such,
+this is considered to be a smaller influence than the peripherals.
 
 % For each task, the other power factor will be estimated based on the
 % above factors. The other power factor will then be multiplied by the
@@ -696,9 +689,8 @@ of the energy used by the individual and their ICT-related
 activities. As previously mentioned, this project assesses the
 chronological impact of the ICT use, and this has been achieved using
 primary data collected from the Realtimecarbon project, rather than a
-static average value for the GHG impact of grid electricity.
-
-The figure commonly quoted for UK National Grid carbon intensity is
+static average value for the GHG impact of grid electricity. The
+figure commonly quoted for UK National Grid carbon intensity is
 445.48g CO$_2$ (via Carbon Trust) per unit of energy (1kWh), however
 in reality this figure changes over the course of the day, and over a
 longer time period, depending on what energy sources are being used
@@ -728,7 +720,7 @@ computer power is a significant point of wastage.
 
 \begin{figure}[!htp]
 \centering
-\includegraphics[width=0.9\columnwidth]{images/generalist_weekday.png}
+\includegraphics[width=0.8\columnwidth]{images/generalist_weekday.png}
 \caption{Energy use by device and component}
 \label{fig:generalist_weekday} 
 \end{figure}
@@ -743,7 +735,7 @@ in the conclusion.
 
 \begin{figure}[!htp]
 \centering
-\includegraphics[width=0.9\columnwidth]{images/energyuse_co2e_overyearbyuser.png}
+\includegraphics[width=0.8\columnwidth]{images/energyuse_co2e_overyearbyuser.png}
 \caption{Comparison of energy use and CO$_2$e for users}
 \label{fig:energyuse_co2e_overyearbyuser} 
 \end{figure}
@@ -760,7 +752,7 @@ depending on the user type.
 
 \begin{figure}[!htp]
 \centering
-\includegraphics[width=0.9\columnwidth]{images/energyuse_comparison.png}
+\includegraphics[width=0.8\columnwidth]{images/energyuse_comparison.png}
 \caption{Comparison of energy use of device and infrastructure}
 \label{fig:energyusecomparison} 
 \end{figure}
@@ -770,13 +762,9 @@ depending on the user type.
 
 Final calculations show that, when prototypical days and user type
 distribution is taken into account, the impact of one average UK
-individual in one year is:
-
-\begin{compactdesc}
-\item[Total energy use:] 259kWh
-\item[Total in use carbon:] 123.7kg
-\item[Total embodied carbon:] 127.1kg
-\end{compactdesc}
+individual in one year is: {\emph{Total energy use:}} 259kWh;
+{\emph{Total in use carbon:}} 123.7kg; {\emph{Total embodied carbon:}}
+127.1kg.
 
 % The tabulated values of energy and carbon by each prototypical day for
 % each user, which have been used to produce this calculation, can be
@@ -882,7 +870,7 @@ video~\cite{schien-et-al:2013}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\columnwidth]{images/comparison_users_devices.png}
+\includegraphics[width=0.8\columnwidth]{images/comparison_users_devices.png}
 \caption{Comparison of notebook/phone use}
 %\caption{Comparison of different users and their devices}
 \label{fig:comparison_users_devices.png} 
@@ -952,7 +940,7 @@ national policy formulation~\cite{smart2020:2008,ruth:2011}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.9\columnwidth]{images/ghgimpact_devicetypes.png}
+\includegraphics[width=0.8\columnwidth]{images/ghgimpact_devicetypes.png}
 \caption{Variation in GHG impact for different device types}
 \label{fig:ghgimpact_devicetype} 
 \end{figure}
