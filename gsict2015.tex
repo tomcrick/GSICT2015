@@ -156,9 +156,9 @@ example, mobile phones~\cite{frey-et-al:2008,fehske:2011} and the
 wider telecommunications industry~\cite{scharnhorst:2008}.
 % \footnote{\url{http://www.greenbiz.com/blog/2011/03/08/exploring-ways-reduce-its-environmental-impacts}}
 
-\section{Definitions}
+\subsection{Definitions}
 
-\subsection{ICT}
+\subsubsection{ICT}
 
 In this paper we define the ``use of ICT'' as the use of information and
 communication technologies that satisfies two criteria:
@@ -203,7 +203,7 @@ existence of other ICT items. Items 5 to 7 are classified as
 `supporting infrastructure'. These are items whose primary function is
 to service the existence of the devices.
 
-\subsection{Individuals}
+\subsubsection{Individuals}
 
 The user is defined as an individual in the domestic, private, or
 public sectors; this excludes any industrial setting. Industry is
@@ -221,7 +221,7 @@ as an aggregated `average' UK citizen. We will also include the impact
 of non-users and nearly-non-users. The specific user types and how
 they make up the UK market will be discussed a later section.
 
-\subsection{Environment Impact}
+\subsubsection{Environment Impact}
 
 We consider environmental impact exclusively as greenhouse gas (GHG) emissions using the CO$_2$e metric~\cite{bsi2050:2011,ieaco2em:2014}. This encompasses global warming potential of CO$_2$ as well as the relative global warming
 severity of other greenhouse gases, relative to the severity of
@@ -230,7 +230,7 @@ CO$_2$.
 % As discussed, other elements of environmental impact will be
 % presented and discussed in our conclusions and recommendations.
 
-\subsection{Life Cycle Stages}
+\subsubsection{Life Cycle Stages}
 
 The life cycle stages of the devices are outlined below:
 
@@ -429,15 +429,16 @@ E_{server} &= k_{energy}-data_{server} * D
 Carbon produced is calculated as a function of energy consumed in each
 section, geographical location and time. The latter two data sets are
 discussed later in this document, and take the form of look- up
-tables. The carbon produced is calculated as below:
+tables. The carbon produced is calculated as below (CO$_2$ produced is
+measured in g, and time-location constants are given in g/J,
+translated from the g/kWh that is input):
+
 \begin{align*}
 C_{device} &= k_{C\_time\_location} * E_{device}\\
 C_{LAN} &= k_{C\_time\_location} * E_{LAN}\\
 C_{WAN} &= k_{C\_time\_location} * E_{WAN}\\
 C_{server} &= k_{C\_time\_location} * E_{server}
 \end{align*}
-CO$_2$ produced is measured in g, and time-location constants are
-given in g/J, translated from the g/kWh that is input.
 
 \section{Data Collection Strategy}
 
@@ -514,7 +515,12 @@ devices; using primary market research we have produced a high-level
 market segmentation of all ICT users. For each segment we have defined
 key behavioural points and the device types owned by each; the
 resulting market segmentation can be seen in
-Figure~\ref{fig:itusersuk}.
+Figure~\ref{fig:itusersuk}, with our estimations of the relative
+proportions of each segment can be seen in
+Figure~\ref{fig:marketshare}.  Using primary market research into user
+behaviour, we decided upon the types of days of use; typically
+`average weekend' and `average weekday' for most users. For each day a
+timetable of use, to a resolution of 0.5 hour slots, was specified.
 
 \begin{figure*}
 \centering
@@ -522,13 +528,6 @@ Figure~\ref{fig:itusersuk}.
 \caption{ICT Users in UK, device ownership and significance to this analysis}
 \label{fig:itusersuk} 
 \end{figure*}
-
-Our estimations of the relative proportions of each segment can be
-seen in Figure~\ref{fig:marketshare}.  Using primary market research
-into user behaviour, we decided upon the types of days of use;
-typically `average weekend' and `average weekday' for most users. For
-each day a timetable of use, to a resolution of 0.5 hour slots, was
-specified.
 
 \begin{figure}
 \centering
@@ -538,15 +537,14 @@ specified.
 \end{figure}
 
 
-\subsection{Use -- Device}
+\subsection{Device Use}
 
-The purpose of this section is to define an average user's ICT use and
-to explore how a device behaves in general under different use cases.
-A device can be used for many different purposes, any one of which we
-will define as a use case.  To identify a suitable selection of use
-cases, we initially brainstormed a great number of possible use
-cases. We then filtered down the selection to satisfy the following
-criteria:
+We wish to define an average user's ICT use and to explore how a
+device behaves in general under different use cases.  A device can be
+used for many different purposes, any one of which we will define as a
+use case.  To identify a suitable selection of use cases, we initially
+identified a large number of possible use cases, which were then
+filtered to satisfy the following criteria:
 
 \noindent {\textbf{Excluding those that show unusual behaviour in the
 device components:}} this excluded gaming, where Graphics Card power
@@ -827,18 +825,7 @@ differentiate domestic and professional ICT use. The Generalist, the
 ICT-less Generalist and Ultra ICT Generalist all own the same
 devices. The ICT-less Generalist only uses a desktop at home;
 Generalists use it approximately 40\% of their working hours, the
-Ultra ICT Generalist about 80\%. The varying desktop energy use
-over a day can be seen in
-Figure~\ref{fig:ghgvariation_userworkrelatedit}.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.9\columnwidth]{images/ghgvariation_userworkrelatedit.png}
-\caption{GHG variation with user work-related ICT}
-\label{fig:ghgvariation_userworkrelatedit} 
-\end{figure}
-
-Notice the non-linear relationship, which can be
+Ultra ICT Generalist about 80\%.  This non-linear relationship can be
 explained by the significance of standby power. Having a computer on
 at work is the key factor -- this immediately adds a large base power
 use (Generalist vs. ICT-Less Generalist), but further use of the
@@ -850,6 +837,16 @@ comparison. This highlights the significance of workplace policies to
 minimise idle computer time. The energy use of workplace computers
 left on overnight is not covered in our LCA and could be hugely
 significant.
+
+% The varying desktop energy use over a day can be seen in
+% Figure~\ref{fig:ghgvariation_userworkrelatedit}.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=0.9\columnwidth]{images/ghgvariation_userworkrelatedit.png}
+% \caption{GHG variation with user work-related ICT}
+% \label{fig:ghgvariation_userworkrelatedit} 
+% \end{figure}
 
 \subsection{Significance of Non-Users}
 
@@ -872,7 +869,15 @@ situations exist that span many different proportional makeups. It is
 important that these are considered should any of these situations
 become particularly popular in the future. Furthermore, the analysis
 of individual behaviour allows us to evaluate common perceptions of
-the environmental impact of given device uses.
+the environmental impact of given device uses. Logic might suggest
+that streaming a video (using large amounts of data and increasing CPU
+load) would be poor behaviour environmentally. However, the Social
+Enthusiast, who typically keeps his device on longer (particularly on
+the weekends) to perform a relatively low intensity task is far
+worse. Furthermore, the Netflicker could be considered to be using the
+concept of cloud efficiency -- streamed videos are typically of a
+lower codec complexity than downloaded or DVD/BluRay based
+video~\cite{schien-et-al:2013}.
 
 \begin{figure}
 \centering
@@ -882,21 +887,21 @@ the environmental impact of given device uses.
 \label{fig:comparison_users_devices.png} 
 \end{figure}
 
-Logic might suggest that streaming a video (using large amounts of
-data and increasing CPU load) would be poor behaviour
-environmentally. However, the Social Enthusiast, who typically keeps
-his device on longer (particularly on the weekends) to perform a
-relatively low intensity task is far worse. Furthermore, the
-Netflicker could be considered to be using the concept of cloud
-efficiency -- streamed videos are typically of a lower codec
-complexity than downloaded or DVD/BluRay based
-video~\cite{schien-et-al:2013}.
-
 \subsection{Significance of Interchangeability of Devices}
 
 Modelling similar behaviour across different devices provides the
 ability to comment on how devices can be interchanged and the effects
-of this.
+of this. In our model we assume the Generalist and the Portable
+Generalist have identical behaviours -- the increase in potability of
+the device does not, for the prototypical days covered, induce
+additional ICT demand. For the Ultra Portable Generalist, we model
+there being a slight increase in ICT use induced by the inclusion of a
+tablet. The tablet is on the individual almost as much as a phone is,
+and this increase in portability is somewhat more significant than the
+desktop-laptop transition. Some tasks are deemed to be down-scalable
+to the tablet, but a lower percentage than those down-scaled the
+previous situation. Furthermore, some tasks on the phone are scaled up
+to the device, due to the overlap of possession.
 
 % Device interchanging is a voluntary process that has come to light
 % with the proliferation of different kinds of devices in the consumer
@@ -906,24 +911,11 @@ of this.
 % interchanging is not a simple process, and this was reflected in our
 % user types.
 
-In our model we assume the Generalist and the Portable Generalist have
-identical behaviours -- the increase in potability of the device does
-not, for the prototypical days covered, induce additional ICT demand.
-
 % In reality, only a few exceptions to this can be perceived -
 % using a laptop in meetings, taking a laptop to a friends house - but
 % these are relatively infrequent events in the scale of an individuals
 % life. Furthermore, the vast majority of tasks undertaken on a desktop
 % can be undertaken on a laptop.
-
-For the Ultra Portable Generalist, we model there being a slight
-increase in ICT use induced by the inclusion of a tablet. The tablet is
-on the individual almost as much as a phone is, and this increase in
-portability is somewhat more significant than the desktop-laptop
-transition. Some tasks are deemed to be down-scalable to the tablet,
-but a lower percentage than those down-scaled the previous
-situation. Furthermore, some tasks on the phone are scaled up to the
-device, due to the overlap of possession.
 
 Although the energy step up from phone to tablet is much smaller than
 the step down from laptop to tablet, the saving here roughly equates
@@ -948,16 +940,14 @@ device energy dominates. The logical progression of this is the CPU
 intensity of a task is a far better indicator of its environmental
 impact, at least in most situations, than the data flow. If accurate,
 this suggests that efforts to reduce server and LAN power would be
-better spent on reducing device energy.
-
-Ultimately this is a very complex topic that involves wider
-socio-psychological and market forces and is only briefly considered
-here. From the theory here, an ideal solution appears to make 98\% of
-individuals use only a phone; this is clearly an unacceptable
-suggestion. Crucially though, the relationship between devices,
-behaviour and carbon is highly significant and demands further
-research, providing huge potential for national policy
-formulation~\cite{smart2020:2008,ruth:2011}.
+better spent on reducing device energy. Ultimately this is an
+incredibly complex topic involving wider socio-psychological and
+market forces and is only briefly considered here. From the theory
+here, an ideal solution appears to make 98\% of individuals use only a
+phone; this is clearly an unacceptable suggestion. Crucially though,
+the relationship between devices, behaviour and carbon is highly
+significant and demands further research, providing huge potential for
+national policy formulation~\cite{smart2020:2008,ruth:2011}.
 
 \begin{figure}
 \centering
