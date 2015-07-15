@@ -1,4 +1,5 @@
 \documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
 
 \usepackage[british]{babel}
 \usepackage{cite}
@@ -14,7 +15,7 @@
 
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{The Environmental Impacts of ICT Use:\\A User-Oriented Perspective}
+\title{Whole-life Environmental Impacts of ICT Use\thanks{This work has been sponsored in part by Arup Group Ltd. and the Industrial Doctorate Centre in Systems at the University of Bristol. We also thank O. Spragg and S. Johnson for their contribution to earlier stages of this work.}}
 
 
 % author names and affiliations
@@ -419,7 +420,7 @@ while the remaining elements are calculated based upon the data
 throughput (D) and a number of constants (all energy values are in
 Joules, and the energy-data constants are given in J/MB):
 \begin{align*}
-E_{LAN} &= E_{standby} + k_{energy}-data_{LAN} * D)\\
+E_{LAN} &= E_{standby} + k_{energy}-data_{LAN} * D\\
 E_{WAN} &= k_{energy}-data_{WAN} * D\\
 E_{server} &= k_{energy}-data_{server} * D
 \end{align*}
@@ -589,9 +590,9 @@ The aforementioned power factors affect the given power use of each
 device component, on average, in a given use state. These are
 calculated thus:
 \begin{align*}
-CPU &= CPU idle power * CPU power factor\\
-Display &= Display average * Display power factor\\
-Other &= CPU idle power * Other power factor
+CPU &= CPU_{idle\ power} * CPU_{power\ factor}\\
+Display &= Display_{average} * Display_{power\ factor}\\
+Other &= CPU_{idle\ power} * Other_{power\ factor}
 \end{align*}
 
 CPU power use and CPU utilisation does not follow a linear
@@ -709,11 +710,11 @@ and their relative contributions to the current grid mix.
 \subsection{Chronological View}
 
 Figure~\ref{fig:generalist_weekday} demonstrates the energy use, by
-the device that causes it, and then by component, for The Generalist’s
+the device that causes it, and then by component, for The Generalist's
 `Average Weekday'. Point A shows the minuscule standby power
 (erroneously including the screen being on) of the phone
 overnight. Point B highlights the increase in device power of
-printing. Point C demonstrates the only perceptible time the phone’s
+printing. Point C demonstrates the only perceptible time the phone's
 energy consumption is tangible, during heavy browsing. Point D
 demonstrates the deactivation of the work computer as the user travels
 home; Point E shows the activation of the home desktop upon arrival,
@@ -721,7 +722,7 @@ entering standby mode. Point F shows the increase in device power due
 to a small period of media viewing; shortly before this we see the
 only tangible power consumption of WAN and Servers, during the high
 data task of Heavy Browsing. Immediately, we can observe that in
-almost all situations, the phone’s power is imperceptibly small
+almost all situations, the phone's power is imperceptibly small
 compared to the desktop power. Secondly, we can observe that idle
 computer power is a significant point of wastage.
 
